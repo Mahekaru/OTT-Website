@@ -1,6 +1,6 @@
 :root {
     --primary-color: #D7008C;
-  }
+}
 
 /* Reset default browser margins and paddings */
 * {
@@ -9,151 +9,168 @@
     box-sizing: border-box;
 }
 
-body * {
+/* Body styling */
+body {
+    margin: 0;
     display: flex;
-}
-/* Navbar container */
-.navbar {
-    display: flex;
-    /* align-items: center; */
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--primary-color);
-    /* padding: 10px 0; Remove horizontal padding */
-    width: 100%; /* Ensure the navbar spans full width */
-    justify-content: space-between;
-    border: 1px solid black;
+    color: #fff;
 }
 
-/* Logo styling */
-.logo {
-    margin: 1em 2em;
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    /* padding: 1em 2em; */
+    /* width: 100%; */
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+/* Logo and Apple Badge */
+#nav-logos {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     height: 50px;
+    margin-right: 1em;
 }
 
-/* Welcome message styling */
+#apple-badge {
+    height: 50px;
+}
+
+/* Welcome Message */
+.nav-main {
+    display: flex;
+    flex: 1 auto;
+    justify-content: center;
+}
+
+.nav-banner-wrapper {
+    margin-bottom: 0.5em;
+}
+
 .welcome-message {
-    color: #fff;
     font-size: 24px;
-    /* margin-left: 20px; */
-    /* flex-grow: 1; */
-    /* text-align: center; */
-    align-items: center;
-    min-width: 11em;
+    text-align: center;
 }
 
-
-
-
-
-
-
-body{
-    margin: 0;
+/* Navigation Links */
+.nav-links ul {
     display: flex;
-    color: var(--primary-color);
-    background-color: var(--primary-color);
-    flex-direction: column;
+    list-style: none;
 }
 
-h1{
-    color: blue;
+.nav-links li {
+    margin-left: 20px;
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
 }
 
-main-head{
-    display: flex;
-}
-
-#apple-badge{
-    height: 5em;
-    margin-left: 2em;
-}
-
-nav-banner-wrapper{
-    flex-grow: 1;
-    justify-content: center;
-}
-nav-main{
-    flex: 3 auto;
-    /* align-items: center; */
-}
-#nav-logos{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    /* flex:1 auto; */
-}
-
-
-
-#nav-logos *{
-    /* margin: 1em 2em; */
-}
-
-/* Nave Links */
-/* --------------------------- */
-
-nav-links{
-    border: 1px solid black;
-    align-items: center;
-}
-
-/* Link hover effect */
 .nav-links a:hover {
     text-decoration: underline;
 }
 
-/* Link styling */
-.nav-links a {
-    text-decoration: none;
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    /* color: var(--primary-color); */
+    padding: 2em;
+}
+
+.main-head img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
     color: #fff;
+    /* text-align: center; */
+    padding: 1em 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    /* text-align: right; */
     font-size: 12px;
 }
 
-/* Navigation links container */
-.nav-links {
-    display: flex;
-    list-style: none;
-    /* margin-left: auto; Pushes the links to the right */
-    /* margin-right: 20px; Add right margin for spacing */
-    /* height: 50px; */
-    /* align-items: center; */
+#footer-link-header {
+    font-size: 16px;
+    margin-bottom: 0.5em;
 }
 
-/* Individual navigation items */
-.nav-links li {
-    /* margin-left: 20px; */
-    /* border: 1px solid black; */
+.footer-links ul {
+    /* list-style: none; */
+    margin-left: 2em;
 }
 
-social-media *{
-    width: 5em;
+.footer-links li {
+    margin-bottom: 0.5em;
 }
 
-footer{
-    justify-content: space-between;
-    position:fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
 }
 
-footer-links{
-    flex-direction: column;
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
-#footer-link-header{
-    color: white;
-    font-size: 15px;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 
-footer-links ul li{
-    margin: 2em;
+    #nav-logos {
+        margin-bottom: 1em;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-top: 1em;
+    }
 }
