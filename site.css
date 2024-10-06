@@ -9,23 +9,23 @@
     box-sizing: border-box;
 }
 
-/* Body styling to ensure no default margins */
-body {
-    margin: 0;
+body * {
+    display: flex;
 }
-
 /* Navbar container */
 .navbar {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     background-color: var(--primary-color);
-    padding: 10px 0; /* Remove horizontal padding */
+    /* padding: 10px 0; Remove horizontal padding */
     width: 100%; /* Ensure the navbar spans full width */
+    justify-content: space-between;
+    border: 1px solid black;
 }
 
 /* Logo styling */
 .logo {
-    margin-left: 20px; /* Add left margin to position logo */
+    margin: 1em 2em;
 }
 
 .logo img {
@@ -36,29 +36,73 @@ body {
 .welcome-message {
     color: #fff;
     font-size: 24px;
-    margin-left: 20px;
-    flex-grow: 1;
-    text-align: center;
+    /* margin-left: 20px; */
+    /* flex-grow: 1; */
+    /* text-align: center; */
+    align-items: center;
+    min-width: 11em;
 }
 
-/* Navigation links container */
-.nav-links {
+
+
+
+
+
+
+body{
+    margin: 0;
     display: flex;
-    list-style: none;
-    margin-left: auto; /* Pushes the links to the right */
-    margin-right: 20px; /* Add right margin for spacing */
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    flex-direction: column;
 }
 
-/* Individual navigation items */
-.nav-links li {
-    margin-left: 20px;
+h1{
+    color: blue;
 }
 
-/* Link styling */
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main-head{
+    display: flex;
+}
+
+#apple-badge{
+    height: 5em;
+    margin-left: 2em;
+}
+
+nav-banner-wrapper{
+    flex-grow: 1;
+    justify-content: center;
+}
+nav-main{
+    flex: 3 auto;
+    /* align-items: center; */
+}
+#nav-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* flex:1 auto; */
+}
+
+
+
+#nav-logos *{
+    /* margin: 1em 2em; */
+}
+
+/* Nave Links */
+/* --------------------------- */
+
+nav-links{
+    border: 1px solid black;
+    align-items: center;
 }
 
 /* Link hover effect */
@@ -66,12 +110,50 @@ body {
     text-decoration: underline;
 }
 
-body{
-    display: flex;
-    color: var(--primary-color);
-    background-color: var(--primary-color);
+/* Link styling */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
 }
 
-h1{
-    color: blue;
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    list-style: none;
+    /* margin-left: auto; Pushes the links to the right */
+    /* margin-right: 20px; Add right margin for spacing */
+    /* height: 50px; */
+    /* align-items: center; */
+}
+
+/* Individual navigation items */
+.nav-links li {
+    /* margin-left: 20px; */
+    /* border: 1px solid black; */
+}
+
+social-media *{
+    width: 5em;
+}
+
+footer{
+    justify-content: space-between;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer-links{
+    flex-direction: column;
+}
+
+#footer-link-header{
+    color: white;
+    font-size: 15px;
+}
+
+footer-links ul li{
+    margin: 2em;
 }
