@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #D7008C;
+  }
+
+/* Reset default browser margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling to ensure no default margins */
+body {
+    margin: 0;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 0; /* Remove horizontal padding */
+    width: 100%; /* Ensure the navbar spans full width */
+}
+
+/* Logo styling */
+.logo {
+    margin-left: 20px; /* Add left margin to position logo */
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Welcome message styling */
+.welcome-message {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Pushes the links to the right */
+    margin-right: 20px; /* Add right margin for spacing */
+}
+
+/* Individual navigation items */
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Link styling */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Link hover effect */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+body{
+    display: flex;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+h1{
+    color: blue;
+}
