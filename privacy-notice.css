@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #D7008C;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar *{
+    display: flex;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    /* padding: 1em 2em; */
+    /* width: 100%; */
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+/* Logo and Apple Badge */
+#nav-logos {
+    display: flex;
+    align-items: center;
+    flex: 1 auto;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1em;
+}
+
+#apple-badge {
+    height: 50px;
+}
+
+/* Welcome Message */
+.nav-main {
+    display: flex;
+    flex: 4 auto;
+    justify-content: center;
+}
+
+.nav-banner-wrapper {
+    margin-bottom: 0.5em;
+    margin-right: 13em;
+    flex: 3 auto;
+    justify-content: center;
+}
+
+.welcome-message {
+    font-size: 24px;
+    text-align: center;
+    color:white;
+}
+
+/* Navigation Links */
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    /* color: var(--primary-color); */
+    padding: 2em;
+}
+
+.main-head{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-head img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-main .links{
+    flex: 1 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 15rem;
+}
+
+.link-list li{
+    margin-right: 1rem;
+    flex: 1 auto;
+    justify-content: center;
+}
+
+.link-list{
+    height: 100%;
+    flex: 1 auto;
+}
+
+.links .link-list{
+    flex-direction: row;
+}
+
+li a {
+    color:#fff;
+    text-decoration: none;
+    padding: 0px 1rem;
+    align-self: center;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+#pn-body{
+    margin:2% 15%;
+}

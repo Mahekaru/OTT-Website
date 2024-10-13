@@ -7,44 +7,76 @@
     <link rel="icon" type="image/x-icon" href="./img/relationshipIconMJ 1024x1024.jpg">
     <link rel="stylesheet" href="site.css">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" /> -->
+    <!-- <script src="https://kit.fontawesome.com/52e6bef042.js" crossorigin="anonymous"></script> -->
+    <meta name="apps.apple.com:1633279048" content="https://apps.apple.com/us/app/our-time-together/id1633279048" />
 </head>
 <body>
     <nav class="navbar">
         <div id="nav-logos">
             <div class="logo">
-                <img src="img/relationshipIconMJ 1024x1024.jpg" alt="Logo">
+                <a href="./index.html">
+                    <img src="img/relationshipIconMJ 1024x1024.jpg" alt="Logo">
+                </a>
+                
             </div>
-            <a href="https://apps.apple.com/us/app/our-time-together/id1633279048">
+            <!-- <a href="https://apps.apple.com/us/app/our-time-together/id1633279048">
                 <img id="apple-badge" src="img/AppleBadge.png" alt="AppleBadge">
-            </a>
+            </a> -->
         </div>
 
         <div class="nav-main">
             <div class="nav-banner-wrapper">
                 <div class="nav-banner welcome-message">
-                    Love Our Time Togethers
+                    <h1>Love Our Time Togethers</h1>
                 </div>
+            </div>
+            <div class="links">
+                <ul class="link-list">
+                    <li onclick="goToLocation('./index.html')"><a href="./index.html">Home</a></li>
+                    <!-- <li><a href="loveourtimetogether.com/contact-us">Contact Us</a></li> -->
+                    <li onclick="goToLocation('./PrivacyNotice.html')"><a href="./PrivacyNotice.html">Privacy Notice</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <main>
         <div class="main-head">
-            <img src="img/Phone.png" alt="phone">
+            <div side-a class="side-a">
+                <img id="ott-phone-1" src="./img/Phone.png">
+                <img onclick="goToLocation('https:/' + '/apps.apple.com/us/app/our-time-together/id1633279048')" id="apple-image-2" src="./img/AppleBadge.png">
+
+            </div>
+            <div class="side-b" col side-b>
+                <div col class="side-box">
+                    <!-- <img id="ott-logo-1" src="./img/relationshipIconMJ 1024x1024.jpg"> -->
+                    <h2>Exciting changes are coming to OTT!</h2>
+                    <a href="https://apps.apple.com/us/app/our-time-together/id1633279048" id="download-link">Download the App</a>
+                </div>
+
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="social-media">
-            <!-- <i class="fa fa-x-twitter"></i> -->
+        <script src="./site-js.js"></script>
+        <div class="container">
+            <div class="social-media">
+                <h5 id="social-media-header">Social Media</h5>
+                <ul>
+                    <li><a href="./PrivacyNotice.html">twitter</a></li>
+                    <li><i class="fa fa-solid"></i></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5 id="footer-link-header">Links</h5>
+                <ul>
+                    <li><a href="./PrivacyNotice.html">Privacy Notice</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-links">
-            <div id="footer-link-header">Links:</div>
-            <ul>
-                <li><a href="./PrivacyNotice.html">Privacy Notice</a></li>
-            </ul>
-        </div>
+
     </footer>
 </body>
 </html>
