@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #D7008C;
+}
+
+body{
+    /* color: var(--primary-color); */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+/* Navbar  */
+/* ----------------------- */
+.navbar{
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.navbar #nav-logos{
+    display: flex;
+    flex: 1 auto;
+}
+
+.navbar .nav-main{
+    display: flex;
+    flex: 4 auto;
+}
+
+.nav-main .links{
+    flex: 1 auto;
+    display: flex;
+}
+
+.nav-main .nav-banner-wrapper{
+    text-align: center;
+    flex: 3 auto;
+    align-self: center;
+}
+
+.link-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex:auto;
+    min-width: 9em;
+    align-items: center;
+}
+
+.link-list li{
+    display: flex;
+    flex:auto;
+    cursor: pointer;
+    justify-content: center;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.welcome-message h1{
+    min-width: 11em;
+    color:white;
+}
+
+#nav-logos .logo a img{
+    height: auto;
+    width: auto;
+    max-width: 5em;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar #nav-logos{
+        display: none;
+    }
+
+    .navbar .nav-main{
+        flex-direction: column;
+    }
+
+    .link-list{
+        flex-direction: column;
+    }
+
+    .link-list li{
+        margin: .5rem 0;
+    }
+  }
+/* ------------------------- */
+
+
+
+
+/* MAIN  */
+/* ------------------------- */
+main{
+    display: flex;;
+}
+
+main .main-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 auto;
+}
+
+div[side-a]{
+    display: flex;
+    flex:1 auto;
+}
+
+div[side-b]{
+    display: flex;
+    flex: 2 auto;
+}
+
+
+/* SIDE A */
+/* ------------------------- */
+.side-a #ott-phone-1{
+    width: auto;
+    object-fit: contain;
+    height: auto;
+}
+
+.side-a{
+ justify-content: center;   
+}
+
+.side-a #apple-image-2{
+    max-width: fit-content;
+    height: 4rem;
+    position: absolute;
+    align-self: flex-start;
+    margin-left: 20rem;
+    margin-top: 8rem;
+}
+/* ------------------------- */
+
+
+/* SIDE B */
+/* ------------------------- */
+    .main-head .side-b{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .side-box{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        flex: 1 auto;
+    }
+    .side-b a{
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: .5rem 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-decoration: none;
+        color: black;
+        background-color: mintcream;
+        max-width: 11rem;
+        text-align: center;
+        align-self: center;
+    }
+/* ------------------------- */
+/* ------------------------- */

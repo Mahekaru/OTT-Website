@@ -2,6 +2,11 @@
     --primary-color: #D7008C;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto
+}
 /* Reset default browser margins and paddings */
 * {
     margin: 0;
@@ -276,7 +281,7 @@ label{
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     footer {
         flex-direction: column;
         align-items: center;
@@ -300,7 +305,7 @@ label{
         text-align: center;
         margin-top: 1em;
     }
-}
+} */
 
 
 
