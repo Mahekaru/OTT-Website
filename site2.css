@@ -51,10 +51,13 @@ body{
     flex:auto;
     cursor: pointer;
     justify-content: center;
+    height: 100%;
+    align-items: center;
 }
 
 li a{
     text-decoration: none;
+    /* color: white; */
 }
 
 .welcome-message h1{
@@ -79,6 +82,10 @@ li a{
 
     .link-list{
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        align-items: normal;
     }
 
     .link-list li{
@@ -93,7 +100,8 @@ li a{
 /* MAIN  */
 /* ------------------------- */
 main{
-    display: flex;;
+    display: flex;
+    justify-content: center;
 }
 
 main .main-head{
@@ -114,16 +122,23 @@ div[side-b]{
 }
 
 
-/* SIDE A */
+/* SIDE A */        
 /* ------------------------- */
 .side-a #ott-phone-1{
-    width: auto;
+    width: 100%;
     object-fit: contain;
-    height: auto;
+    height: 100%;
 }
 
 .side-a{
- justify-content: center;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-a .side-a-box{
+    display: flex;
+    height: 80%;
 }
 
 .side-a #apple-image-2{
@@ -133,36 +148,98 @@ div[side-b]{
     align-self: flex-start;
     margin-left: 20rem;
     margin-top: 8rem;
+    cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+    .side-a #apple-image-2{
+        max-width: fit-content;
+        height: 3rem;
+        position: absolute;
+        align-self: flex-start;
+        margin-left: 0;
+        margin-top: 0;
+        cursor: pointer;
+    }
+
+  }
 /* ------------------------- */
 
 
 /* SIDE B */
 /* ------------------------- */
-    .main-head .side-b{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+.side-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    .side-box{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-        flex: 1 auto;
-    }
-    .side-b a{
-        border: 1px solid white;
-        border-radius: 20px;
-        padding: .5rem 1.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: large;
-        text-decoration: none;
-        color: black;
-        background-color: mintcream;
-        max-width: 11rem;
-        text-align: center;
-        align-self: center;
-    }
+.side-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /* flex: 1 auto; */
+    margin-bottom: 1em;
+    height: 50%;
+    width: 100%;
+}
+
+.side-b a{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    background-color: mintcream;
+    max-width: 11rem;
+    text-align: center;
+    align-self: center;
+}
 /* ------------------------- */
+
+
+
+/* Footer */
+/* ------------------------- */
+footer{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+}
+
+footer .container{
+    display: flex;
+}
+
+.container .social-media{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media, .footer-links{
+    margin: 0 2em;
+}
+
+.container{
+    display: flex;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.social-media h5, .footer-links h5{
+    margin: .5em 0;
+    color: white;
+
+}
 /* ------------------------- */
