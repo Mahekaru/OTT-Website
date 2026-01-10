@@ -4,7 +4,7 @@ import logo from "../assets/Frame-3-1.svg";
 const Navigation = () => {
   return (
     <>
-      <div className="navigation">
+      <div className="navigation" >
         <a href="#">
           <img src={logo} alt="Logo" />
         </a>
