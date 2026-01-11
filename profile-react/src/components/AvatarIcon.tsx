@@ -1,14 +1,11 @@
-import activeIndicator from "../assets/Active-Indicator-1.svg";
 import logo from "../assets/02-scaled.png";
 
-const Features = () => {
+const AvatarIcon = () => {
   return (
     <div className="container col ">
-      <h2 className="align-self-center">New Features</h2>
-      <img className="h16" src={activeIndicator} alt="Active Indicator"></img>
       <div className="row no-wrap align-items-center mt-5">
         <img className="scaled-logo" src={logo} alt="Logo"></img>
-
+        
         <div className="container col">
           <h1>Avatar Icon</h1>
           <h2 className="pink-color">Personalize your Experience</h2>
@@ -32,4 +29,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default AvatarIcon;

@@ -7,9 +7,13 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import About from "./components/About";
-import Features from "./components/Features";
+import AvatarIcon from "./components/AvatarIcon";
 import Themes from "./components/Themes";
 import NewLook from "./components/NewLook";
+import NewFeature from "./components/NewFeature";
+import SavedData from "./components/SavedData";
+import RelationshipData from "./components/RelationshipData";
+import Animations from "./components/Animations";
 
 function App() {
   return (
@@ -21,15 +25,15 @@ function App() {
       />
       <About />
       <div className="bg1">
-        
-        <Features />
+        <NewFeature />
+        <AvatarIcon />
         <Themes />
         <NewLook />
       </div>
       <div className="bg2">
-        <Features />
-        <Themes />
-        <NewLook />
+        <SavedData />
+        <RelationshipData />
+        <Animations />
       </div>
     </>
   );
