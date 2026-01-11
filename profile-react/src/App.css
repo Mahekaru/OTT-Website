@@ -3,9 +3,17 @@
 }
 
 .row{
+    display: flex;
     flex-direction: row;
 }
 
 .col{
+    display: flex;
     flex-direction: column;
+}
+
+@media all and (max-width: 1024px) {
+    .row{
+        flex-direction: column;
+    }
 }

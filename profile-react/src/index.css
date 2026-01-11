@@ -1,15 +1,38 @@
-.pink-color{
-  color: #D7008C;
+.pink-color {
+  color: #d7008c;
 }
 
-.font-kamerik{
-  font-family: 'Kamerik 105 Cyrillic','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.font-kamerik {
+  font-family: "Kamerik 105 Cyrillic", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 38px;
 }
 
-.about-section{
+.about-section {
   display: flex;
   flex-direction: column;
+}
+
+.scaled-logo {
+  width: 450px !important;
+}
+
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+
+.bg1 {
+  background-image: url("./assets/Light-Bottom.png");
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url("./assets/Light-Bottom-1.png");
+  background-size: cover;
+}
+
+.h16{
+  height: 16px;
 }
