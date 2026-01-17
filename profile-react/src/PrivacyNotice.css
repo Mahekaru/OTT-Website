@@ -1,0 +1,127 @@
+.privacy-notice {
+  padding: 96px 24px;
+  background: linear-gradient(135deg, #0f0f18 0%, #161627 60%, #1d1022 100%);
+  color: #f7f7fa;
+}
+
+.privacy-notice__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+}
+
+.privacy-notice__header {
+  display: grid;
+  gap: 12px;
+}
+
+.privacy-notice__eyebrow {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d7008c;
+  font-weight: 700;
+  margin: 0;
+}
+
+.privacy-notice__title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.privacy-notice__copy {
+  margin: 0;
+  max-width: 760px;
+  color: #d5d6e0;
+  line-height: 1.6;
+}
+
+.privacy-notice__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.privacy-notice__button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #d7008c;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  box-shadow: 0 12px 30px rgba(215, 0, 140, 0.25);
+  border: 1px solid #d7008c;
+}
+
+.privacy-notice__button:hover {
+  transform: translateY(-2px);
+  background: #b00071;
+  box-shadow: 0 16px 36px rgba(215, 0, 140, 0.35);
+}
+
+.privacy-notice__button:focus-visible {
+  outline: 3px solid rgba(215, 0, 140, 0.45);
+  outline-offset: 2px;
+}
+
+.privacy-notice__button.ghost {
+  background: transparent;
+  color: #f7f7fa;
+  box-shadow: none;
+}
+
+.privacy-notice__button.ghost:hover {
+  background: rgba(215, 0, 140, 0.12);
+}
+
+.privacy-notice__viewer {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.privacy-notice__viewer object {
+  width: 100%;
+  min-height: 72vh;
+  border: none;
+  display: block;
+  background: #0c0c12;
+}
+
+.privacy-notice__viewer p {
+  padding: 24px;
+  margin: 0;
+  color: #d5d6e0;
+  line-height: 1.6;
+}
+
+.privacy-notice__viewer a {
+  color: #d7008c;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .privacy-notice__content {
+    grid-template-columns: 360px 1fr;
+    align-items: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-notice {
+    padding: 64px 18px;
+  }
+
+  .privacy-notice__title {
+    font-size: 26px;
+  }
+
+  .privacy-notice__viewer object {
+    min-height: 60vh;
+  }
+}

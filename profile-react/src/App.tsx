@@ -16,6 +16,10 @@ import RelationshipData from "./components/RelationshipData";
 import Animations from "./components/Animations";
 import CoreFeatures from "./components/CoreFeatures";
 import Cores from "./components/Cores";
+import Choose from "./components/Choose";
+import Join from "./components/Join";
+import PrivacyNotice from "./components/PrivacyNotice";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -37,8 +41,15 @@ function App() {
         <RelationshipData />
         <Animations />
       </div>
-      <CoreFeatures/>
-      <Cores/>
+      <CoreFeatures />
+      <Cores />
+      <Choose />
+      <Join
+        appleurl="https://apps.apple.com/us/app/our-time-together/id1633279048"
+        googleurl="https://play.google.com/store/apps/details?id=com.MJA.ott&pli=1"
+      />
+
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,25 @@
+.bg-pink{
+    background-color: #D7008C0D;
+}
+
+.frame{
+    display: flex;
+    padding: 50px;
+    border-radius: 41px;
+    gap:20px;
+    row-gap:30px;
+}
+
+.header{
+    font-weight: 700;;
+}
+
+@media all and (max-width: 1024px) {
+    .frame{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .frame-image{
+        width: 100%;
+    }
+}

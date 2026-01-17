@@ -2,6 +2,15 @@
   color: #d7008c;
 }
 
+.pink-dark-color {
+  background-color: transparent;
+  background-image: linear-gradient(105deg, #AC0070 0%, #73004B 100%);
+}
+
+.app-store , .play-store{
+  width: 20rem;
+}
+
 .font-kamerik {
   font-family: "Kamerik 105 Cyrillic", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
