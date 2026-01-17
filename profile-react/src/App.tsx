@@ -14,6 +14,8 @@ import NewFeature from "./components/NewFeature";
 import SavedData from "./components/SavedData";
 import RelationshipData from "./components/RelationshipData";
 import Animations from "./components/Animations";
+import CoreFeatures from "./components/CoreFeatures";
+import Cores from "./components/Cores";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <RelationshipData />
         <Animations />
       </div>
+      <CoreFeatures/>
+      <Cores/>
     </>
   );
 }

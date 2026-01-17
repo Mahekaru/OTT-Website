@@ -1,0 +1,12 @@
+.core{
+    border-radius: 41px;
+    box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.09);
+    max-width: 21rem;
+}
+
+.cores{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

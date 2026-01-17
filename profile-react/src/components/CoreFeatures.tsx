@@ -1,12 +1,13 @@
 import activeIndicator from "../assets/Active-Indicator-1.svg";
 
-const NewFeature = () => {
+
+const CoreFeatures = () => {
   return (
     <div className="container col ">
-      <h1 className="align-self-center">New Features</h1>
+      <h2 className="align-self-center">Core Features</h2>
       <img className="h16" src={activeIndicator} alt="Active Indicator"></img>
     </div>
-  );
-};
+  )
+}
 
-export default NewFeature;
+export default CoreFeatures
