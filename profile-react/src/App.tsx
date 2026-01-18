@@ -11,16 +11,15 @@ import About from "./components/About";
 import AvatarIcon from "./components/AvatarIcon";
 import Themes from "./components/Themes";
 import NewLook from "./components/NewLook";
-import NewFeature from "./components/NewFeature";
 import SavedData from "./components/SavedData";
 import RelationshipData from "./components/RelationshipData";
 import Animations from "./components/Animations";
-import CoreFeatures from "./components/CoreFeatures";
 import Cores from "./components/Cores";
 import Choose from "./components/Choose";
 import Join from "./components/Join";
 import Footer from "./components/Footer";
 import PrivacyNotice from "./components/PrivacyNotice";
+import HeaderIndicator from "./components/HeaderIndicator";
 
 function App() {
   const appleurl =
@@ -38,7 +37,7 @@ function App() {
               <Header appleurl={appleurl} googleurl={googleurl} />
               <About />
               <div className="bg1">
-                <NewFeature />
+                <HeaderIndicator header="New Features" />
                 <AvatarIcon />
                 <Themes />
                 <NewLook />
@@ -48,7 +47,7 @@ function App() {
                 <RelationshipData />
                 <Animations />
               </div>
-              <CoreFeatures />
+              <HeaderIndicator header="Core Features" />
               <Cores />
               <Choose />
               <Join appleurl={appleurl} googleurl={googleurl} />
