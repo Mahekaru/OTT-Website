@@ -3,6 +3,7 @@ import phoneimg from "../assets/01-1-scaled.png";
 import appstoreimg from "../assets/Apple-1.svg";
 import playstoreimg from "../assets/Google_Play_2022_logo.svg";
 import "../Header.css";
+import { useInView } from "../hooks/useInView";
 
 interface Props {
   appleurl?: string;
