@@ -1,4 +1,4 @@
-import { type MouseEvent, useState } from "react";
+import { useMouseParallax } from "../hooks/useMouseParallax";
 import phoneimg from "../assets/01-1-scaled.png";
 import appstoreimg from "../assets/Apple-1.svg";
 import playstoreimg from "../assets/Google_Play_2022_logo.svg";
@@ -10,24 +10,9 @@ interface Props {
 }
 
 const Header = (props: Props) => {
-  const [imgOffset, setImgOffset] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    const normalizedX = (x / rect.width - 0.5) * 2;
-    const normalizedY = (y / rect.height - 0.5) * 2;
-    const maxOffset = 20;
-    setImgOffset({
-      x: normalizedX * maxOffset,
-      y: normalizedY * maxOffset,
-    });
-  };
-
-  const handleMouseLeave = () => {
-    setImgOffset({ x: 0, y: 0 });
-  };
+  const { offset, handleMouseMove, handleMouseLeave } = useMouseParallax({
+    maxOffset: 20,
+  });
 
   return (
     <div
@@ -53,7 +38,7 @@ const Header = (props: Props) => {
         className="header-hero"
         src={phoneimg}
         alt="Header Image"
-        style={{ transform: `translate3d(${imgOffset.x}px, ${imgOffset.y}px, 0)` }}
+        style={{ transform: `translate3d(${offset.x}px, ${offset.y}px, 0)` }}
       ></img>
     </div>
   );
