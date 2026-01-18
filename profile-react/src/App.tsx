@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import "bootstrap/dist/js/bootstrap.min.js";
+import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -18,36 +19,45 @@ import CoreFeatures from "./components/CoreFeatures";
 import Cores from "./components/Cores";
 import Choose from "./components/Choose";
 import Join from "./components/Join";
-import PrivacyNotice from "./components/PrivacyNotice";
 import Footer from "./components/Footer";
+import PrivacyNotice from "./components/PrivacyNotice";
 
 function App() {
+  const appleurl =
+    "https://apps.apple.com/us/app/our-time-together/id1633279048";
+  const googleurl =
+    "https://play.google.com/store/apps/details?id=com.MJA.ott&pli=1";
   return (
     <>
       <Navigation />
-      <Header
-        appleurl="https://apps.apple.com/us/app/our-time-together/id1633279048"
-        googleurl="https://play.google.com/store/apps/details?id=com.MJA.ott&pli=1"
-      />
-      <About />
-      <div className="bg1">
-        <NewFeature />
-        <AvatarIcon />
-        <Themes />
-        <NewLook />
-      </div>
-      <div className="bg2">
-        <SavedData />
-        <RelationshipData />
-        <Animations />
-      </div>
-      <CoreFeatures />
-      <Cores />
-      <Choose />
-      <Join
-        appleurl="https://apps.apple.com/us/app/our-time-together/id1633279048"
-        googleurl="https://play.google.com/store/apps/details?id=com.MJA.ott&pli=1"
-      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header appleurl={appleurl} googleurl={googleurl} />
+              <About />
+              <div className="bg1">
+                <NewFeature />
+                <AvatarIcon />
+                <Themes />
+                <NewLook />
+              </div>
+              <div className="bg2">
+                <SavedData />
+                <RelationshipData />
+                <Animations />
+              </div>
+              <CoreFeatures />
+              <Cores />
+              <Choose />
+              <Join appleurl={appleurl} googleurl={googleurl} />
+            </>
+          }
+        />
+
+        <Route path="/privacy" element={<PrivacyNotice />} />
+      </Routes>
 
       <Footer />
     </>

@@ -34,7 +34,7 @@ const Footer = () => {
               <li>About</li>
               <li>Features</li>
               <li>
-                <a href={privacyPdf} target="_blank" rel="noopener noreferrer">Privacy Notice</a>
+                <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Notice</a>
               </li>
             </ul>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
             <h2>Legal</h2>
             <ul>
               <li>
-                <a href={privacyPdf} target="_blank" rel="noopener noreferrer">Privacy Notice</a>
+                <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Notice</a>
               </li>
               <li>
                 <a href="https://www.flaticon.com/" title="freepik icons">
