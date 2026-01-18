@@ -1,4 +1,3 @@
-import React from "react";
 import "../PrivacyNotice.css";
 import privacyPdf from "../assets/Privacy Policy Generator.pdf";
 

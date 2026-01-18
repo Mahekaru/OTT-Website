@@ -1,20 +1,20 @@
 import "../Navigation.css";
+import { Link } from "react-router-dom";
 import logo from "../assets/Frame-3-1.svg";
 
 const Navigation = () => {
-
   return (
     <>
       <div className="navigation">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="Logo" />
-        </a>
+        </Link>
         <ul className="nav-links">
           <li>
-            <a href="/" rel="noopener noreferrer">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/privacy" rel="noopener noreferrer">Privacy Notice</a>
+            <Link to="/privacy">Privacy Notice</Link>
           </li>
         </ul>
       </div>
