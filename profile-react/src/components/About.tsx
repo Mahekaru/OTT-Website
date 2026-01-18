@@ -1,9 +1,17 @@
 import activeIndicator from "../assets/Active-Indicator.svg";
+import { useInView } from "../hooks/useInView";
 
 const About = () => {
+  const { ref, isVisible } = useInView();
+
   return (
     <>
-      <div className="container about-section mb-5">
+      <div
+        ref={ref}
+        className={`container about-section mb-5 fade-in-up ${
+          isVisible ? "is-visible" : ""
+        }`}
+      >
         <h2 className="align-self-center">About Our App</h2>
         <img src={activeIndicator} alt="Active Indicator"></img>
         <h1 className="pink-color">
