@@ -14,6 +14,11 @@
   width: 576px;
 }
 
+.header-hero{
+  transition: transform 0.25s ease-out;
+  will-change: transform;
+}
+
 .bg-header h2{
   color: #d7008c;
   font-family: 'Kamerik 105 Cyrillic','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
