@@ -1,19 +1,32 @@
 .privacy-notice {
-  padding: 96px 24px;
-  background: linear-gradient(135deg, #0f0f18 0%, #161627 60%, #1d1022 100%);
-  color: #f7f7fa;
+  width: 100%;
+  padding: 96px 16px 108px;
+  background: radial-gradient(circle at 10% 20%, #ffe5f4 0, transparent 30%),
+    radial-gradient(circle at 90% 10%, #ffe5ff 0, transparent 32%),
+    #ffffff;
 }
 
 .privacy-notice__content {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
-  display: grid;
-  gap: 32px;
+  gap: 28px;
+  background: linear-gradient(180deg, rgba(215, 0, 140, 0.06) 0%, #ffffff 62%);
+  border: 1px solid #f3d8e9;
+  border-radius: 41px;
+  padding: 48px 44px 52px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
 }
 
 .privacy-notice__header {
   display: grid;
   gap: 12px;
+  text-align: center;
+  align-items: center;
+}
+
+.privacy-notice__indicator {
+  width: 80px;
+  margin: 6px auto 4px;
 }
 
 .privacy-notice__eyebrow {
@@ -26,14 +39,15 @@
 
 .privacy-notice__title {
   margin: 0;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.2;
+  color: #181018;
 }
 
 .privacy-notice__copy {
-  margin: 0;
+  margin: 0 auto;
   max-width: 760px;
-  color: #d5d6e0;
+  color: #1f1526;
   line-height: 1.6;
 }
 
@@ -41,48 +55,51 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 8px;
 }
 
 .privacy-notice__button {
   padding: 12px 18px;
-  border-radius: 10px;
+  border-radius: 999px;
   background: #d7008c;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
   transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
-  box-shadow: 0 12px 30px rgba(215, 0, 140, 0.25);
+  box-shadow: 0 12px 30px rgba(215, 0, 140, 0.22);
   border: 1px solid #d7008c;
 }
 
 .privacy-notice__button:hover {
   transform: translateY(-2px);
   background: #b00071;
-  box-shadow: 0 16px 36px rgba(215, 0, 140, 0.35);
+  box-shadow: 0 16px 36px rgba(215, 0, 140, 0.28);
 }
 
 .privacy-notice__button:focus-visible {
-  outline: 3px solid rgba(215, 0, 140, 0.45);
+  outline: 3px solid rgba(215, 0, 140, 0.35);
   outline-offset: 2px;
 }
 
 .privacy-notice__button.ghost {
-  background: transparent;
-  color: #f7f7fa;
-  box-shadow: none;
+  background: #ffe5f4;
+  color: #8a125f;
+  border: 2px solid #d7008c;
+  box-shadow: 0 10px 26px rgba(215, 0, 140, 0.12);
 }
 
 .privacy-notice__button.ghost:hover {
-  background: rgba(215, 0, 140, 0.12);
+  background: #ffd5ed;
 }
 
 .privacy-notice__viewer {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #f3d8e9;
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+  margin-top: 10px;
 }
 
 .privacy-notice__viewer object {
@@ -90,13 +107,13 @@
   min-height: 72vh;
   border: none;
   display: block;
-  background: #0c0c12;
+  background: #ffffff;
 }
 
 .privacy-notice__viewer p {
   padding: 24px;
   margin: 0;
-  color: #d5d6e0;
+  color: #2b2534;
   line-height: 1.6;
 }
 
@@ -107,18 +124,24 @@
 
 @media (min-width: 992px) {
   .privacy-notice__content {
+    display: grid;
     grid-template-columns: 360px 1fr;
     align-items: start;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .privacy-notice {
-    padding: 64px 18px;
+    padding: 72px 12px 88px;
+  }
+
+  .privacy-notice__content {
+    padding: 32px 22px 40px;
+    border-radius: 32px;
   }
 
   .privacy-notice__title {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .privacy-notice__viewer object {

@@ -64,3 +64,14 @@ a{
     font-size: 26px;
     color: #FFFFFF;
 }
+ul{
+    padding: 0;
+}
+
+@media all and (max-width: 1024px) {
+.items{
+    flex-direction: column;
+    gap: 20px;
+}
+
+}

@@ -20,12 +20,14 @@ import Join from "./components/Join";
 import Footer from "./components/Footer";
 import PrivacyNotice from "./components/PrivacyNotice";
 import HeaderIndicator from "./components/HeaderIndicator";
+import Contact from "./components/Contact";
+import Updates from "./components/Updates";
 
 function App() {
   const appleurl =
     "https://apps.apple.com/us/app/our-time-together/id1633279048";
   const googleurl =
-    "https://play.google.com/store/apps/details?id=com.MJA.ott&pli=1";
+    "https://play.google.com/store/apps/details?id=com.ourtimetogether.app";
   return (
     <>
       <Navigation />
@@ -54,8 +56,9 @@ function App() {
             </>
           }
         />
-
+        <Route path="/updates" element={<Updates />} />
         <Route path="/privacy" element={<PrivacyNotice />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />

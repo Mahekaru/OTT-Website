@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ottImage from "../assets/Frame-3.png";//bluesky-social-seeklogo.svg
 import "../Footer.css";
 
@@ -77,7 +78,7 @@ const Footer = () => {
                 <a href="#" onClick={(e) => { e.preventDefault(); scrollto(1300); }}>Features</a>
               </li>
               <li>
-                <a href="/privacy" rel="noopener noreferrer">Privacy Notice</a>
+                <Link to="/privacy">Privacy Notice</Link>
               </li>
             </ul>
           </div>
@@ -85,7 +86,7 @@ const Footer = () => {
             <h2>Legal</h2>
             <ul>
               <li>
-                <a href="/privacy" rel="noopener noreferrer">Privacy Notice</a>
+                <Link to="/privacy">Privacy Notice</Link>
               </li>
               <li>
                 <a href="https://www.flaticon.com/" title="freepik icons">
